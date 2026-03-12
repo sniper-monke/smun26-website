@@ -1,0 +1,270 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* SMUN Branding Colors */
+  --smun-navy: #0F1B2E;
+  --smun-gold: #D4AF37;
+  --smun-cream: #F5F1E8;
+  --smun-gold-light: #E8C547;
+  --smun-navy-light: #1A2F4A;
+  
+  --primary: var(--smun-gold);
+  --primary-foreground: var(--smun-navy);
+  --sidebar-primary: var(--smun-gold);
+  --sidebar-primary-foreground: var(--smun-navy);
+  --chart-1: var(--smun-gold);
+  --chart-2: var(--smun-gold-light);
+  --chart-3: var(--smun-navy);
+  --chart-4: var(--smun-navy-light);
+  --chart-5: var(--smun-cream);
+  --radius: 0.65rem;
+  
+  /* Dark theme for SMUN */
+  --background: var(--smun-navy);
+  --foreground: var(--smun-cream);
+  --card: var(--smun-navy-light);
+  --card-foreground: var(--smun-cream);
+  --popover: var(--smun-navy-light);
+  --popover-foreground: var(--smun-cream);
+  --secondary: var(--smun-navy-light);
+  --secondary-foreground: var(--smun-gold);
+  --muted: rgba(212, 175, 55, 0.2);
+  --muted-foreground: var(--smun-cream);
+  --accent: var(--smun-gold);
+  --accent-foreground: var(--smun-navy);
+  --destructive: #ef4444;
+  --destructive-foreground: var(--smun-cream);
+  --border: rgba(212, 175, 55, 0.3);
+  --input: rgba(212, 175, 55, 0.15);
+  --ring: var(--smun-gold);
+  --sidebar: var(--smun-navy-light);
+  --sidebar-foreground: var(--smun-cream);
+  --sidebar-accent: var(--smun-gold);
+  --sidebar-accent-foreground: var(--smun-navy);
+  --sidebar-border: rgba(212, 175, 55, 0.3);
+  --sidebar-ring: var(--smun-gold);
+}
+
+.dark {
+  --background: var(--smun-navy);
+  --foreground: var(--smun-cream);
+  --card: var(--smun-navy-light);
+  --card-foreground: var(--smun-cream);
+  --popover: var(--smun-navy-light);
+  --popover-foreground: var(--smun-cream);
+  --secondary: var(--smun-navy-light);
+  --secondary-foreground: var(--smun-gold);
+  --muted: rgba(212, 175, 55, 0.2);
+  --muted-foreground: var(--smun-cream);
+  --accent: var(--smun-gold);
+  --accent-foreground: var(--smun-navy);
+  --destructive: #ef4444;
+  --destructive-foreground: var(--smun-cream);
+  --border: rgba(212, 175, 55, 0.3);
+  --input: rgba(212, 175, 55, 0.15);
+  --ring: var(--smun-gold);
+  --sidebar: var(--smun-navy-light);
+  --sidebar-foreground: var(--smun-cream);
+  --sidebar-accent: var(--smun-gold);
+  --sidebar-accent-foreground: var(--smun-navy);
+  --sidebar-border: rgba(212, 175, 55, 0.3);
+  --sidebar-ring: var(--smun-gold);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold tracking-wide;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl font-serif font-bold;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl font-serif font-bold;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-serif font-bold;
+  }
+}
+
+@layer components {
+  /* Font families */
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+  
+  /* Gold accent line */
+  .gold-line {
+    height: 4px;
+    background: linear-gradient(to right, transparent, var(--smun-gold), transparent);
+  }
+  
+  /* Gold divider */
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--smun-gold), transparent);
+  }
+  
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease;
+  }
+  
+  .glass-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-color: rgba(212, 175, 55, 0.6);
+  }
+  
+  /* Gold text glow */
+  .gold-glow {
+    color: var(--smun-gold);
+    filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1));
+  }
+  
+  /* Elegant button */
+  .btn-elegant {
+    padding: 0.75rem 2rem;
+    background-color: var(--smun-gold);
+    color: var(--smun-navy);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease;
+  }
+  
+  .btn-elegant:hover {
+    background-color: var(--smun-gold-light);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  
+  /* Section divider with compass motif */
+  .section-divider {
+    position: relative;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.2), transparent);
+  }
+}
