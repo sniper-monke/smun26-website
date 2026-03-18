@@ -126,7 +126,7 @@ export default function Home() {
             About SMUN
           </h2>
           <p className="text-lg text-white/80 mb-6 font-sans leading-relaxed">
-            Scottish Model United Nations is a premier conference dedicated to fostering diplomatic excellence and international understanding among young leaders. Held annually at Bombay Scottish School in Mumbai, SMUN brings together hundreds of delegates from across India and internationally.
+            Scottish Model United Nations is a premier conference dedicated to fostering diplomatic excellence and international understanding among young leaders. Held annually at Bombay Scottish School in Mumbai, SMUN brings together hundreds of delegates from across multiple backgrounds.
           </p>
           <p className="text-lg text-white/80 font-sans leading-relaxed">
             Our mission is to provide a platform for students to develop critical thinking, public speaking, and negotiation skills while engaging with real-world global issues. Through rigorous committee work and dynamic debates, participants gain invaluable experience in diplomacy and international relations.
