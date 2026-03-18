@@ -13,13 +13,13 @@ const committees: Committee[] = [
     id: '1',
     name: 'United Nations Security Council',
     agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
-    difficulty: 'Advanced',
+    difficulty: 'Intermediate',
   },
   {
     id: '2',
     name: 'The Duma',
     agenda: 'The Bolshevik Revolution  (Freeze Date: 19th February 1918) ',
-    difficulty: 'Intermediate',
+    difficulty: 'Advanced',
   },
   {
     id: '3',
@@ -37,13 +37,13 @@ const committees: Committee[] = [
     id: '5',
     name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
     agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
-    difficulty: 'Intermediate',
+    difficulty: 'Beginner',
   },
   {
     id: '6',
     name: 'UN Commission on Crime Prevention and Criminal Justice',
     agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
-    difficulty: 'Beginner',
+    difficulty: 'Intermediate',
   },
 ];
 
@@ -66,10 +66,10 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-0 z-[1] bg-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">
-            Scottish Model United Nations 26
+            Scottish Model United Nations '26
           </h1>
           <p className="text-xl md:text-2xl text-smun-gold mb-8 font-serif">
-            Bombay Scottish School | Mumbai
+            Bombay Scottish School, Mahim | Mumbai
           </p>
           <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto font-sans">
             Join us for an extraordinary conference where young diplomats from across the globe unite to address pressing international issues.
@@ -103,13 +103,13 @@ export default function Home() {
             </div>
             <div>
               <p className="text-lg text-white/80 mb-6 font-sans leading-relaxed">
-                Welcome to SMUN 26. This year's conference brings together the brightest minds in diplomacy to tackle the world's most pressing challenges. We are honored to host delegations from schools across the globe as they engage in meaningful discourse and build lasting connections.
+                Welcome to SMUN '26. This year's conference brings together the brightest minds in diplomacy to tackle the world's most pressing challenges. We are honored to host delegations from schools across the globe as they engage in meaningful discourse and build lasting connections.
               </p>
               <p className="text-lg text-white/80 font-sans leading-relaxed">
                 The spirit of Model United Nations lies in fostering understanding, promoting dialogue, and developing the leaders of tomorrow. We look forward to an exceptional conference.
               </p>
               <p className="text-smun-gold font-serif font-bold mt-6">
-                Secretary General, SMUN 26
+                Secretary General, SMUN '26
               </p>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-smun-gold mb-12 text-center">
-            Our Committees (Placeholder committees)
+            Our Committees
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {committees.map((committee) => (
@@ -204,7 +204,7 @@ export default function Home() {
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -212,14 +212,14 @@ export default function Home() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Location</h3>
             <p className="text-white/60 font-sans text-sm">
-              Bombay Scottish School<br />
+              Bombay Scottish School, Mahim<br />
               Mumbai, India
             </p>
           </div>
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>

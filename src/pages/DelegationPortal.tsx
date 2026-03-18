@@ -15,7 +15,7 @@ export default function DelegationPortal() {
             Delegation Portal
           </h1>
           <p className="text-xl text-smun-gold font-serif">
-            Register your delegation for SMUN 26
+            Register yourself for SMUN '26
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function DelegationPortal() {
                   External Delegation
                 </h2>
                 <p className="text-lg text-white/80 font-sans mb-8 leading-relaxed">
-                  For schools and delegations outside Bombay Scottish School. Register your delegation and select your committees.
+                  For schools and delegations or individuals outside Bombay Scottish School. Register your delegation and select your committees.
                 </p>
                 <a
                   href={externalDelegationForm}
@@ -54,7 +54,7 @@ export default function DelegationPortal() {
                   Internal Delegation
                 </h2>
                 <p className="text-lg text-white/80 font-sans mb-8 leading-relaxed">
-                  For students from Bombay Scottish School. Register as an internal delegate and participate in SMUN 26.
+                  For students from Bombay Scottish School. Register as an internal delegate and participate in SMUN '26.
                 </p>
                 <a
                   href={internalDelegationForm}
@@ -82,7 +82,7 @@ export default function DelegationPortal() {
                 Registration Deadline
               </h3>
               <p className="text-white/80 font-sans">
-                All registrations must be completed by XX March 2026. Late submissions may not be accepted.
+                All registrations must be completed by 10 April 2026. Late submissions may not be accepted.
               </p>
             </div>
 
@@ -123,10 +123,10 @@ export default function DelegationPortal() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-smun-gold mb-8 text-center">
-            Frequently Asked Questions (AI Generated for now pls change later)
+            Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            <div className="glass-card p-6">
+           {/*} <div className="glass-card p-6">
               <h3 className="text-lg font-serif font-bold text-smun-gold mb-2">
                 Can I change my committee after registration?
               </h3>
@@ -142,14 +142,14 @@ export default function DelegationPortal() {
               <p className="text-white/80 font-sans">
                 Position papers are required for registration. However, if you need more time, you can request an extension by contacting us immediately.
               </p>
-            </div>
+            </div>*/}
 
             <div className="glass-card p-6">
               <h3 className="text-lg font-serif font-bold text-smun-gold mb-2">
                 Is there a registration fee?
               </h3>
               <p className="text-white/80 font-sans">
-                Registration fees vary based on your delegation type. Details will be provided during the registration process.
+                Registration fees are ₹2000. Details will be provided during the registration process.
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function DelegationPortal() {
                 What documents do I need to bring on the day?
               </h3>
               <p className="text-white/80 font-sans">
-                Bring your confirmation email, a valid ID, and any materials you've prepared. More details will be sent after registration.
+                Bring your school ID card and any materials you've prepared. More details will be sent after registration.
               </p>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function DelegationPortal() {
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -184,7 +184,7 @@ export default function DelegationPortal() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>

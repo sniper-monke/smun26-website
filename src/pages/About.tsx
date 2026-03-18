@@ -9,7 +9,7 @@ export default function About() {
       <section className="relative pt-32 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
-            About SMUN 26
+            About SMUN '26
           </h1>
           <p className="text-xl text-smun-gold font-serif">
             Understanding the conference and its mission
@@ -139,7 +139,7 @@ To every one of you, prepare to embark on a Diplomatic Discourse unlike any othe
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-smun-gold mb-12 text-center">
-            Why Attend SMUN 26?
+            Why Attend SMUN '26?
           </h2>
           <div className="space-y-6">
             <div className="glass-card p-6 flex gap-4">
@@ -213,7 +213,7 @@ To every one of you, prepare to embark on a Diplomatic Discourse unlike any othe
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -228,7 +228,7 @@ To every one of you, prepare to embark on a Diplomatic Discourse unlike any othe
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>

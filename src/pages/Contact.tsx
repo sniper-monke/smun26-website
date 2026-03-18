@@ -9,12 +9,59 @@ export default function Contact() {
     subject: '',
     message: '',
   });
+  const [submitState, setSubmitState] = useState<
+    'idle' | 'sending' | 'sent' | 'error'
+  >('idle');
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setSubmitState('sending');
+    setSubmitError(null);
+
+    try {
+      const endpoint =
+        import.meta.env.VITE_FORMSPREE_ENDPOINT ||
+        (import.meta.env.VITE_FORMSPREE_FORM_ID
+          ? `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_FORM_ID}`
+          : '');
+
+      if (!endpoint) {
+        throw new Error(
+          "Form is not configured (missing VITE_FORMSPREE_FORM_ID)."
+        );
+      }
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _replyto: formData.email,
+          _subject: formData.subject,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const data = (await response.json().catch(() => null)) as
+        | { ok?: boolean; error?: string }
+        | null;
+
+      if (!response.ok) {
+        throw new Error(data?.error || 'Failed to send message');
+      }
+
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      setSubmitState('sent');
+    } catch (err) {
+      setSubmitState('error');
+      setSubmitError(err instanceof Error ? err.message : 'Failed to send message');
+    }
   };
 
   return (
@@ -28,7 +75,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="text-xl text-smun-gold font-serif">
-            Get in touch with the SMUN 26 team
+            Get in touch with the SMUN '26 team
           </p>
         </div>
       </section>
@@ -167,10 +214,21 @@ export default function Contact() {
 
             <button
               type="submit"
+              disabled={submitState === 'sending'}
               className="w-full px-6 py-3 bg-smun-gold text-smun-navy font-serif font-bold rounded-lg hover:bg-smun-gold-light transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Send Message
+              {submitState === 'sending' ? 'Sending…' : 'Send Message'}
             </button>
+            {submitState === 'sent' && (
+              <p className="text-sm text-smun-cream text-center">
+                Message sent successfully.
+              </p>
+            )}
+            {submitState === 'error' && (
+              <p className="text-sm text-red-300 text-center">
+                {submitError || 'Failed to send message.'}
+              </p>
+            )}
           </form>
         </div>
       </section>
@@ -186,11 +244,15 @@ export default function Contact() {
           </h2>
           <div className="flex justify-center gap-6">
             <a
-              href="#"
+              href="https://www.instagram.com/smun2026_/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
               className="w-12 h-12 rounded-lg bg-smun-gold/20 border border-smun-gold/50 flex items-center justify-center hover:bg-smun-gold/40 transition-all duration-300"
             >
               <Instagram className="w-6 h-6 text-smun-gold" />
             </a>
+            {/*
             <a
               href="#"
               className="w-12 h-12 rounded-lg bg-smun-gold/20 border border-smun-gold/50 flex items-center justify-center hover:bg-smun-gold/40 transition-all duration-300"
@@ -202,7 +264,7 @@ export default function Contact() {
               className="w-12 h-12 rounded-lg bg-smun-gold/20 border border-smun-gold/50 flex items-center justify-center hover:bg-smun-gold/40 transition-all duration-300"
             >
               <Linkedin className="w-6 h-6 text-smun-gold" />
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -211,7 +273,7 @@ export default function Contact() {
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -226,7 +288,7 @@ export default function Contact() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>

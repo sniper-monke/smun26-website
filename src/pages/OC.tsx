@@ -288,8 +288,8 @@ const OC: React.FC = () => {
         <h3 className="text-center text-smun-gold mb-16 text-5xl font-bold">
           Organising Committee
         </h3>
-        <p className="text-xl text-smun-gold font-serif text-center mb-12">
-            Meet the team behing SMUN-26, the Organising Committee.
+          <p className="text-xl text-smun-gold font-serif text-center mb-12">
+            Meet the team behing SMUN '26, the Organising Committee.
           </p>
         {departments.map((dept) => (
           <div key={dept.name} className="mb-12">

@@ -13,14 +13,14 @@ const committees: Committee[] = [
     id: '1',
     name: 'United Nations Security Council',
     agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
-    difficulty: 'Advanced',
+    difficulty: 'Intermediate',
     description:'The Sahel region, which includes Burkina Faso, Mali, Niger, and Chad, struggles with rising terrorism from jihadist organisations like JNIM and ISGS, which fuels insurgencies, displacement, and state fragility in the face of resource conflicts and porous borders brought on by climate change. Attacks on civilians, military installations, and relief workers have increased, causing instability in the area and endangering international security through arms trafficking and migration waves. With a focus on counterterrorism tactics, peacekeeping improvements like the development of MINUSMA, sanctions, and multinational forces to restore stability, this Semi-Crisis UN Security Council committee engages in substantive discussions, resolution drafting, and targeted crises.IIf extremist groups control territory, taxation, and populations, are we witnessing terrorism—or the rise of parallel states?',
   },
   {
     id: '2',
     name: 'The Duma',
     agenda: 'The Bolshevik Revolution  (Freeze Date: 19th February 1918) ',
-    difficulty: 'Intermediate',
+    difficulty: 'Advanced',
     description: 'The Duma, Russia\'s imperial parliament, formed in 1905, became a battleground during the Bolshevik Revolution when radical issues confronted the Provisional Government amidst the chaos of World War I, economic collapse, and popular discontent. By early 1918, the Bolsheviks, led by Lenin, had seized power in the October Revolution, disbanded the Constituent Assembly, and faced the possibility of civil war, signing the Treaty of Brest-Litovsk to stop the conflict. This Continuous Crisis Committee simulates talks leading up to the freeze date of February 19, 1918, in which delegates navigate power battles, peace negotiations, and revolutionary policies while debating Russia\'s future. Can Russia attain peace and stability or will this revolution inevitably cause its downfall?',
 
   },
@@ -41,16 +41,16 @@ const committees: Committee[] = [
   },
   {
     id: '5',
-    name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
+    name: '⁠Special Political and the Decolonization Committee  (SPECPOL) ',
     agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
-    difficulty: 'Intermediate',
+    difficulty: 'Beginner',
     description:'Venezuela\'s crisis, exacerbated by economic collapse, hyperinflation, and political deadlock under Maduro, has sparked unilateral military interventions like alleged covert operations or border incursions, raising sovereignty concerns amid refugee flows and humanitarian collapse. These actions risk escalating regional tensions, violating non-intervention principles, and complicating decolonization legacies in Latin America. As a fully Humanitarian Committee, this committee will assess intervention impacts on civilians, human rights, and self-determination, proposing diplomatic safeguards, aid corridors, and UN-monitored resolutions to prioritize relief over force. Can a foreign military actually save a democracy or is it just an intervention for old regime changes and hidden motives?',
   },
   {
     id: '6',
     name: 'UN Commission on Crime Prevention and Criminal Justice',
     agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
-    difficulty: 'Beginner',
+    difficulty: 'Intermediate',
     description: 'El Salvador, dubbed the "murder capital," faced rampant gang violence from MS-13 and Barrio 18, with homicide rates rampantly increasing due to extortion rackets, territorial turf wars, and youth recruitment amid poverty and weak policing. By the freeze date, government crackdowns like mega-prisons offered temporary relief but fueled cycles of retaliation and prison riots. As a fully Humanitarian Committee, the UNCCPCJ will address root causes through prevention strategies, rehabilitation programs, community policing, and international cooperation.  If the only way to stop a war on the streets is to turn the entire country into a prison, have we won or simply chosen to ‘bar’ the entire situation behind?',
 
   },
@@ -68,7 +68,7 @@ export default function Committees() {
             Our Committees
           </h1>
           <p className="text-xl text-smun-gold font-serif">
-            Explore the diverse committees at SMUN 26
+            Explore the diverse committees at SMUN '26
           </p>
         </div>
       </section>
@@ -80,7 +80,7 @@ export default function Committees() {
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg text-white/80 font-sans leading-relaxed">
-            SMUN 26 offers six distinct committees, each providing a unique diplomatic experience. Whether you're a first-time delegate or a seasoned MUN veteran, we have the perfect committee for you.
+            SMUN '26 offers six distinct committees, each providing a unique diplomatic experience. Whether you're a first-time delegate or a seasoned MUN veteran, we have the perfect committee for you.
           </p>
         </div>
       </section>
@@ -128,12 +128,14 @@ export default function Committees() {
                   </p>
 
                   <div className="flex gap-4">
-                    <button className="px-6 py-2 bg-smun-gold text-smun-navy font-serif font-bold rounded-lg hover:bg-smun-gold-light transition-all duration-300">
+                    <button className="px-6 py-2 border-2 border-smun-gold bg-smun-gold text-smun-navy font-serif font-bold rounded-lg hover:bg-smun-gold-light transition-all duration-300">
                       Learn More
+                    
                     </button>
+                    {/*
                     <button className="px-6 py-2 border-2 border-smun-gold text-smun-gold font-serif font-bold rounded-lg hover:bg-smun-gold/10 transition-all duration-300">
                       Select Committee
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -201,7 +203,7 @@ export default function Committees() {
             Ready to Join?
           </h2>
           <p className="text-lg text-white/90 font-sans mb-8">
-            Select your committee and register for SMUN 26 today.
+            Select your committee and register for SMUN '26 today.
           </p>
           <a
             href="/delegation-portal"
@@ -216,7 +218,7 @@ export default function Committees() {
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -231,7 +233,7 @@ export default function Committees() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>

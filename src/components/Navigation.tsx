@@ -26,7 +26,7 @@ export default function Navigation() {
               className="h-12 w-12 object-contain"
             />
             <div className="hidden md:block">
-              <div className="text-smun-gold font-serif font-bold text-lg">SMUN 26</div>
+              <div className="text-smun-gold font-serif font-bold text-lg">SMUN '26</div>
               <div className="text-smun-cream text-xs">Scottish MUN</div>
             </div>
           </a>

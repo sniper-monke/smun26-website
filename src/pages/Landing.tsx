@@ -28,7 +28,7 @@ export default function Landing() {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl font-serif text-white mb-2">
-          Scottish Model United Nations 26
+          Scottish Model United Nations '26
         </p>
 
         {/* Location Box */}
@@ -37,7 +37,7 @@ export default function Landing() {
           className="border-2 border-white rounded-2xl px-6 md:px-8 py-3 md:py-4 backdrop-blur-md bg-white/5 mb-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
         >
           <p className="text-base md:text-lg font-serif text-white">
-            SMUN 26 held in Mumbai
+            SMUN '26 held in Mumbai
           </p>
         </div>
 

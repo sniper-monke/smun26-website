@@ -58,7 +58,7 @@ export default function Preparation() {
             Preparation & Registration
           </h1>
           <p className="text-xl text-smun-gold font-serif">
-            Everything you need to prepare for SMUN 26
+            Everything you need to prepare for SMUN '26
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function Preparation() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-smun-gold/20">
-                    <span className="text-smun-gold font-serif font-bold text-lg">4</span>
+                    <span className="text-smun-gold font-serif font-bold text-lg">3</span>
                   </div>
                 </div>
                 <div>
@@ -181,7 +181,7 @@ export default function Preparation() {
                     Attend the Conference
                   </h3>
                   <p className="text-white/80 font-sans">
-                    Join us on 28 April 2026 for an unforgettable experience in diplomacy and international relations.
+                    Join us on 28 & 29 April 2026 for an unforgettable experience in diplomacy and international relations.
                   </p>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export default function Preparation() {
       <footer className="border-t border-smun-gold/20 py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
-            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN 26</h3>
+            <h3 className="text-smun-gold font-serif font-bold mb-4">SMUN '26</h3>
             <p className="text-white/60 font-sans text-sm">
               Scottish Model United Nations Conference
             </p>
@@ -252,7 +252,7 @@ export default function Preparation() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 April 2026
+              28 & 29 April 2026
             </p>
           </div>
         </div>
