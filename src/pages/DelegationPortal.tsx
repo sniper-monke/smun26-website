@@ -31,7 +31,7 @@ export default function DelegationPortal() {
             <div className="flex flex-col items-center justify-center">
               <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-smun-gold mb-6">
-                  External Delegation
+                  External Application
                 </h2>
                 <p className="text-lg text-white/80 font-sans mb-8 leading-relaxed">
                   For schools and delegations or individuals outside Bombay Scottish School. Register your delegation and select your committees.
@@ -51,7 +51,7 @@ export default function DelegationPortal() {
             <div className="flex flex-col items-center justify-center">
               <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-smun-gold mb-6">
-                  Internal Delegation
+                  Internal Application
                 </h2>
                 <p className="text-lg text-white/80 font-sans mb-8 leading-relaxed">
                   For students from Bombay Scottish School. Register as an internal delegate and participate in SMUN '26.
