@@ -67,10 +67,10 @@ export default function Contact() {
             </h3>
             <p className="text-white/80 font-sans">
               <a
-                href="tel:+919876543210"
+                href="tel:+918169692579"
                 className="hover:text-smun-gold transition-colors"
               >
-                +91 9930170354 (ts aks phone number)
+                +91 816 969 2579
               </a>
             </p>
           </div>
