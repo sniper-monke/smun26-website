@@ -16,12 +16,12 @@ export default function Landing() {
       />
 
       {/* Content */}
-      <div className="relative z-10 h-screen flex flex-col items-center justify-center px-4">
+      <div  onClick={() => navigate('/home')} className="cursor-pointer relative z-10 h-screen flex flex-col items-center justify-center px-4">
         {/* Main Text Box - Matching Design Reference */}
         <div className="max-w-6xl mx-auto text-center mb-4 mt-0">
           <div className="border-2 border-white rounded-3xl p-8 md:p-12 bg-transparent hover:bg-white/10 transition-all duration-500">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-              The Pinnacle of<br />Model United Nations
+              The Scottish <br />Model United Nations
             </h1>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Landing() {
           className="border-2 border-white rounded-2xl px-6 md:px-8 py-3 md:py-4 backdrop-blur-md bg-white/5 mb-4 cursor-pointer hover:opacity-80 transition-opacity duration-300"
         >
           <p className="text-base md:text-lg font-serif text-white">
-            SMUN '26 held in Mumbai
+            Click to Know More
           </p>
         </div>
 
