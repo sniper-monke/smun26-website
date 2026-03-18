@@ -27,7 +27,7 @@ export default function About() {
             Welcome, Delegates!
           </h2>
           <p className="text-lg text-white/90 font-sans leading-relaxed mb-6">
-            Esteemed participants, we welcome you to the captivating fourteenth edition of SMUN, where the convergence of competition and collaboration, contention and cooperation and discourse and dissension take center stage.
+            Esteemed participants, we welcome you to the captivating fourteenth edition of SMUN, where the convergence of competition and collaboration, contention, cooperation and discourse take center stage.
           </p>
           <p className="text-lg text-white/90 font-sans leading-relaxed mb-6">
             We invite you to unveil your unique perspectives on global issues by making full use of the platform provided by SMUN. Here’s your chance to wield your arsenal of arguments to sway, transform, or convert diverse viewpoints into concrete, actionable solutions that propel the boundaries of your respective committees forward, mirroring the dynamics of genuine global fora.
@@ -67,7 +67,7 @@ To every one of you, prepare to embark on a Diplomatic Discourse unlike any othe
                 Growing Reach
               </h3>
               <p className="text-white/80 font-sans">
-                Over the years, SMUN has attracted delegations from across multiple backgrounds. We've hosted hundreds of delegates and created countless memorable experiences and lasting friendships.
+                Over the years, SMUN has attracted delegates from across multiple backgrounds. We've hosted hundreds of delegates and created countless memorable experiences and lasting friendships.
               </p>
             </div>
 
@@ -228,7 +228,7 @@ To every one of you, prepare to embark on a Diplomatic Discourse unlike any othe
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 & 29 April 2026
+              28th & 29th April 2026
             </p>
           </div>
         </div>

@@ -72,7 +72,7 @@ export default function Home() {
             Bombay Scottish School, Mahim | Mumbai
           </p>
           <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto font-sans">
-            Join us for an extraordinary conference where young diplomats from across the globe unite to address pressing international issues.
+            Join us for an extraordinary conference where young diplomats from across the city unite to address pressing international issues.
           </p>
           <Link href="/delegation-portal">
             <a className="inline-block px-10 py-4 bg-smun-gold text-smun-navy font-serif font-bold text-lg rounded-lg hover:bg-smun-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
@@ -219,7 +219,7 @@ export default function Home() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 & 29 April 2026
+              28th & 29th April 2026
             </p>
           </div>
         </div>

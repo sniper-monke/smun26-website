@@ -181,7 +181,7 @@ export default function Preparation() {
                     Attend the Conference
                   </h3>
                   <p className="text-white/80 font-sans">
-                    Join us on 28 & 29 April 2026 for an unforgettable experience in diplomacy and international relations.
+                    Join us on 28th & 29th April 2026 for an unforgettable experience in diplomacy and international relations.
                   </p>
                 </div>
               </div>
@@ -252,7 +252,7 @@ export default function Preparation() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 & 29 April 2026
+              28th & 29th April 2026
             </p>
           </div>
         </div>

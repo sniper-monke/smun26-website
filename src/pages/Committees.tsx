@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import { Link } from 'wouter';
 
 interface Committee {
   id: string;
@@ -205,12 +206,11 @@ export default function Committees() {
           <p className="text-lg text-white/90 font-sans mb-8">
             Select your committee and register for SMUN '26 today.
           </p>
-          <a
-            href="/delegation-portal"
-            className="inline-block px-10 py-4 bg-smun-gold text-smun-navy font-serif font-bold text-lg rounded-lg hover:bg-smun-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
-          >
-            Go to Delegation Portal
-          </a>
+          <Link href="/delegation-portal">
+            <a className="inline-block px-10 py-4 bg-smun-gold text-smun-navy font-serif font-bold text-lg rounded-lg hover:bg-smun-gold-light transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105">
+              Go to Delegation Portal
+            </a>
+          </Link>
         </div>
       </section>
 
@@ -233,7 +233,7 @@ export default function Committees() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 & 29 April 2026
+              28th & 29th April 2026
             </p>
           </div>
         </div>

@@ -82,7 +82,7 @@ export default function DelegationPortal() {
                 Registration Deadline
               </h3>
               <p className="text-white/80 font-sans">
-                All registrations must be completed by 10 April 2026. Late submissions may not be accepted.
+                All registrations must be completed by 10th April 2026. Late submissions may not be accepted.
               </p>
             </div>
 
@@ -131,7 +131,7 @@ export default function DelegationPortal() {
                 Can I change my committee after registration?
               </h3>
               <p className="text-white/80 font-sans">
-                Yes, you can request a committee change by contacting the organizing committee at contact@smun26.org before 20 March 2026.
+                Yes, you can request a committee change by contacting the organizing committee at contact@smun26.org before 20th March 2026.
               </p>
             </div>
 
@@ -184,7 +184,7 @@ export default function DelegationPortal() {
           <div>
             <h3 className="text-smun-gold font-serif font-bold mb-4">Date</h3>
             <p className="text-white/60 font-sans text-sm">
-              28 & 29 April 2026
+              28th & 29th April 2026
             </p>
           </div>
         </div>

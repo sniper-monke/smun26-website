@@ -68,7 +68,7 @@ const departments = [
     name:"Secretariat",
     heads: [
       {
-        name:"Dhyan Jarianwala",
+        name:"Dhyan Jariwala",
         img: "/images/OCP/dhyan.png",
         position: "Secretary-General",
         description: "Introducing Dhyan Jariwala ,the kind of person who’s always calm, collected, and quietly in control. When he’s not out capturing moments through wildlife photography, you’ll probably find him keeping up with his favorite film Argo or just taking things in his signature cool way. Charismatic, cool and optimistic, Dhyan brings a steady and positive energy to everything he does. As the Secretary General, he’s the overall head of the event, overseeing and supervising all the work happening in SMUN and making sure everything stays on track.",
@@ -86,7 +86,7 @@ const departments = [
         description: "Meet Dia — the one who keeps every agenda sharp and every committee perfectly in sync. As the Deputy Director General of Committees, she’s the mind behind the structure, making sure every discussion has direction and every plan has purpose. An animal lover at heart and a sportsperson in spirit, Dia balances passion with empathy in everything she does. Whether she’s playing badminton, keeping up with the thrill of F1, or getting lost in a good book, she’s always ready for a spontaneous side quest. When she’s not managing committees, you’ll probably find her rewatching How I Met Your Mother, Kal Ho Naa Ho, or How to Lose a Guy in 10 Days with hot chocolate in hand and something sweet (or sushi) close by.",
       },
       {
-        name:"Hrishikesh Vishwanathan",
+        name:"Hrishikesh Viswanathan",
         img: "/images/OCP/hrishikesh.jpeg",
         position: "Director General of Administration",
         description: "Meet Hrishikesh — the man who turns chaos into perfect coordination. Strategic, resourceful and always thinking three steps ahead, he’s the quiet force making sure every detail falls exactly where it should. From capturing the wild through his lens to smashing it on the badminton court, Hrishikesh brings passion and adventure into everything he does.When he’s not fine-tuning logistics, you’ll probably find him vibing to Channa Mereya, rewatching Zindagi Na Milegi Dobara or The Rookie, with a coffee in one hand and a slice of pizza not too far away. Calm under pressure and always ready with a plan, he’s the backbone behind the smooth running of it all.",
@@ -129,7 +129,7 @@ const departments = [
     heads: [
       {
         name: "Vivaan Chakrabarti",
-        img: "/images/OCP/vivaan.png",
+        img: "/images/OCP/vc.png",
         position: "Head",
         description: "Responsible for managing this department.",
       },
@@ -145,7 +145,7 @@ const departments = [
     name: "Technical Operations",
     heads: [
       {
-        name: "Shashank Rokade",
+        name: "Shashank Rokde",
         img: "/images/OCP/shashank.jpeg",
         position: "Head",
         description: "Responsible for managing this department.",
@@ -191,7 +191,7 @@ const departments = [
     name: "Press",
     heads: [
       {
-        name: "Sia Kini",
+        name: "Siya Kini",
         img: "/images/OCP/sia.png",
         position: "Head",
         description: "Responsible for managing this department.",
@@ -254,7 +254,7 @@ const departments = [
     name: "Public Relations",
     heads: [
       {
-        name: "Samika Agarwal",
+        name: "Samika Agrawal",
         img: "/images/OCP/samika.png",
         position: "Head",
         description: "Responsible for managing this department.",
@@ -289,7 +289,7 @@ const OC: React.FC = () => {
           Organising Committee
         </h3>
           <p className="text-xl text-smun-gold font-serif text-center mb-12">
-            Meet the team behing SMUN '26, the Organising Committee.
+            Meet the team behind SMUN '26, the Organising Committee.
           </p>
         {departments.map((dept) => (
           <div key={dept.name} className="mb-12">
