@@ -1,8 +1,13 @@
 import { useLocation } from 'wouter';
 import CountdownTimer from '@/components/CountdownTimer';
+import { useMemo } from 'react';
 
 export default function Landing() {
   const [, navigate] = useLocation();
+  const backgroundAttachment = useMemo(() => {
+    if (typeof window === 'undefined') return 'scroll';
+    return window.matchMedia('(max-width: 768px)').matches ? 'scroll' : 'fixed';
+  }, []);
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-smun-navy">
@@ -11,7 +16,8 @@ export default function Landing() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(rgba(15, 27, 46, 0.4), rgba(15, 27, 46, 0.4)), url('https://d2xsxph8kpxj0f.cloudfront.net/310519663431089649/PMFipsbD3dT3Xo7JL4jygv/landing-bg-correct_bd49229e.png')`,
-          backgroundAttachment: 'fixed',
+          backgroundAttachment,
+          backgroundColor: '#0F1B2E',
         }}
       />
 
