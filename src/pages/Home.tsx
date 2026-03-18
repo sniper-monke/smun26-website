@@ -11,7 +11,7 @@ interface Committee {
 const committees: Committee[] = [
   {
     id: '1',
-    name: 'United Nations Security Council',
+    name: 'The United Nations Security Council',
     agenda: 'Terror in Sahel! Addressing the rise of extremist groups in the Sahel region.',
     difficulty: 'Intermediate',
   },
@@ -23,25 +23,25 @@ const committees: Committee[] = [
   },
   {
     id: '3',
-    name: ' Middle East Regional Intelligence & Strategy Council (MERISC)',
+    name: 'The Middle East Regional Intelligence & Strategy Council (MERISC)',
     agenda: ' Deliberating on the rising tensions in the Middle East.',
     difficulty: 'Advanced',
   },
   {
     id: '4',
-    name: 'United Nations Human Rights Council (UNHRC)',
+    name: 'The United Nations Human Rights Council (UNHRC)',
     agenda: 'Addressing the human rights violations in the Rwandan Genocide (1994)',
     difficulty: 'Beginner',
   },
   {
     id: '5',
-    name: '⁠Special Political and the Decolonization Committee  ( SPECPOL) ',
+    name: 'The Special Political and the Decolonization Committee (SPECPOL)',
     agenda: 'Evaluating the Implications of Unilateral Military Interventions in Venezuela.  ',
     difficulty: 'Beginner',
   },
   {
     id: '6',
-    name: 'UN Commission on Crime Prevention and Criminal Justice',
+    name: 'The UN Commission on Crime Prevention and Criminal Justice',
     agenda: 'Tackling Gang Wars in the Crime Capital of the World: El Salvador (Freeze Date: 31st December 2017)',
     difficulty: 'Intermediate',
   },
@@ -232,3 +232,4 @@ export default function Home() {
     </div>
   );
 }
+
